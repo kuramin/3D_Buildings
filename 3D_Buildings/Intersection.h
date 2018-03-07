@@ -18,7 +18,6 @@ public:
 
 		double eps = 0.00000000001;
 		
-		//return ua > 0.0 && ua < 1.0 && ub > 0.0 && ub < 1.0;
 		return ua > eps && ua < (1.0 - eps) && ub > eps && ub < (1.0 - eps);
 	}
 
