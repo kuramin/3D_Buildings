@@ -42,7 +42,7 @@ bool right_button = false;
 bool middle_button = false;
 GLfloat window_pix_width, window_pix_height;
 GLfloat max_coord = 250;
-bool on_1 = 0, on_2 = 0, on_3 = 0, on_4 = 0, on_5 = 0, on_6 = 0, on_7 = 0, on_8 = 0, on_9 = 0, on_0 = 0;
+bool on_1 = 1, on_2 = 0, on_3 = 0, on_4 = 0, on_5 = 0, on_6 = 0, on_7 = 0, on_8 = 0, on_9 = 0, on_0 = 0;
 vector<Point3> tess_pts;
 
 //------------------------------------------OPENGL functions ----------------------------------
@@ -431,11 +431,12 @@ int main(int argc, char** argv)
 
 		cout << "Delete too small clusters" << endl;
 		sandex1.delete_small_clusters(cluster_array, 100);
-		cout << "Separate vegetation from buildings" << cluster_array.size() << endl;
+		cout << "Now total number of clusters is " << cluster_array.size() << endl;
 
 		sandex1.separate_vegetation(cluster_array, points_veget, 0.1);
 		cout << "Cluster of buildings has size " << cluster_array.size() << endl;
 
+		cout << "Visualization step" << endl;
 		vec_of_buildings = sandex1.vector_of_flatroofs_from_clusterised_point_cloud(cluster_array, outl_array, dgp_array);
 
 		// foot_height of every building is found from calculation of minimal value of "points_dtm[s]->z" from dougpeu of current building
