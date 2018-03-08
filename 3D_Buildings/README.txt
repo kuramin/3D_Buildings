@@ -1,5 +1,7 @@
 Intro
-Current project performs classification of a point cloud to classes of Ground, Vegetation and Buildings and than visualizes members of these classes using OpenGL. The input point cloud is a part of result of aerial laser scanning of a village. 
+Current project performs classification of a point cloud to classes of Ground, 
+Vegetation and Buildings and than visualizes members of these classes using OpenGL. 
+The input point cloud is a part of result of aerial laser scanning of a village. 
 
 Description
 During execution the program performs the following actions:
@@ -13,7 +15,9 @@ During execution the program performs the following actions:
 8) Use approach similar to RANSAC to separate clusters of buildings from clusters of vegetation;
 9) For every cluster of a building define its outline by Modified Convex Hull method;
 10) Simplify every building outline by Douglas-Peucker;
-11) Creates a set of building models on level of details LoD1 based on building simplified outlines. Height of the ground floor is assigned based on the DTM. Height of the roof is calculated by averaging of all heights of current cluster members;
+11) Creates a set of building models on level of details LoD1 based on building simplified outlines. 
+    Height of the ground floor is assigned based on the DTM. 
+    Height of the roof is calculated by averaging of all heights of current cluster members;
 12) Visualizes intermediate and final results.
 
 Visualization
