@@ -2,6 +2,7 @@ Intro
 Current project performs classification of a point cloud to classes of Ground, 
 Vegetation and Buildings and than visualizes members of these classes using OpenGL. 
 The input point cloud is a part of result of aerial laser scanning of a village. 
+The exe-file "3D_Buildings_prj.exe" is located in the folder "../3D_Buildings/3D_Buildings/3D_Buildings_prj/Release/
 
 Description
 During execution the program performs the following actions:
