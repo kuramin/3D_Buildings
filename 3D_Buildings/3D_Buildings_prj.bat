@@ -1,0 +1,1 @@
+start "" 3D_Buildings_prj/Release/3D_Buildings_prj.exe scanning_results.xyz

@@ -398,10 +398,23 @@ void mouse_motion(int mouse_motion_coor_pix_x, int mouse_motion_coor_pix_y)
 
 int main(int argc, char** argv)
 {
+	string filePath;
+	// check if image paths were defined
+	if (argc != 2) {
+		cerr << "Usage: 3D_Buildings_prj <path scanning results>" << endl;
+		cerr << "Press enter to continue..." << endl;
+		cin.get();
+		return -1;
+	}
+	else {
+		// if yes, assign it to variable fname
+		filePath = argv[1];
+	}
+
 	Sand_Ex1 sandex1;
 	// read initial pointcloud
 	cout << "Lets read point file." << endl;
-	points_dsm = TXTReader::ReadFileToVectorOfPointers("scanning_results.xyz");
+	points_dsm = TXTReader::ReadFileToVectorOfPointers(filePath);
 	cout << points_dsm.size() << " points read." << endl;
 
 	if (points_dsm.size() > 0) {
