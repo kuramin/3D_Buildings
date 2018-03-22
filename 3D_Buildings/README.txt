@@ -3,6 +3,7 @@ Current project performs classification of a point cloud to classes of Ground,
 Vegetation and Buildings and than visualizes members of these classes using OpenGL. 
 The input point cloud is a part of result of aerial laser scanning of a village. 
 To launch the program run the file 3D_Buildings_prj.bat from current folder.
+Image Input_and_result.png contains shows point cloud and resulting visualisation
 
 
 Description
