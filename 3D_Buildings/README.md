@@ -2,9 +2,9 @@
 <body>
 	<h2>3D building reconstruction and visualisation</h2>
 	<p>Current project performs classification of a point cloud to Ground, Vegetation and Buildings and than visualizes members of these classes using OpenGL library. The input point cloud is a part of result of aerial laser scanning of a village. The input point cloud looks like the following:</p>
-	<img src="images/bui1.png" width="500" height="300">
+	<img src="images/bui1.png" width="1250" height="500">
 	<p>Result of classification is presented on the next picture. Brown points represent Ground, green points are Vegetation, beige points belong to Buildings:</p>
-	<img src="images/bui2.png" width="500" height="300">
+	<img src="images/bui2.png" width="1250" height="500"> <br> <br>
 	<p>During execution the program performs the following actions:<ol class="ord_list" type="a">
 		<li>Read point cloud from .xyz file;</li>
 		<li>Transfer point cloud to the local coordinate system;</li>
@@ -21,7 +21,7 @@
 			Height of the roof is calculated by averaging of all heights of current cluster members;</li>
 		<li>Visualize intermediate and final results.</li>
 	</ol>
-	</p>
+	</p> <br> <br>
 	<p>Interface description:
 	<ol class="ord_list" type="a">
 	<li>In the beginning program shows comments about performed steps, shows number of read points, number of clusters and etc;</li>
@@ -40,10 +40,10 @@
 		<li> - building models; Beige color represents walls, brown color - roofs.</li> </ol> </li>
 	<li>For exit push the Close button.</li>
 	</ol>
-	</p>
+	</p> <br> <br>
 	<p>The following image shows vegetation and building outlines only:</p>
-	<img src="images/bui3.png" width="500" height="300">
+	<img src="images/bui3.png" width="1250" height="500">
 	<p>Visualization of vegetation and building models:</p>
-	<img src="images/bui4.png" width="500" height="300">
+	<img src="images/bui4.png" width="1250" height="500">
 </body>
 </html>
