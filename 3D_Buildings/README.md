@@ -2,7 +2,7 @@
 <body>
 	<h2>3D building reconstruction and visualisation</h2>
 	<p>Current project performs classification of a point cloud to Ground, Vegetation and Buildings and than visualizes members of these classes using OpenGL library. The input point cloud is a part of result of aerial laser scanning of a village. The input point cloud looks like the following:</p>
-	<img src="images/bui1.png" width="1000" height="350">
+	<img src="images/bui1.png" width="99%"> <br> <br>
 	<p>Result of classification is presented on the next picture. Brown points represent Ground, green points are Vegetation, beige points belong to Buildings:</p>
 	<img src="images/bui2.png" width="1000" height="350"> <br> <br>
 	<p>During execution the program performs the following actions:<ol class="ord_list" type="a">
@@ -42,7 +42,7 @@
 	</ol>
 	</p> <br> <br>
 	<p>The following image shows vegetation and building outlines only:</p>
-	<img src="images/bui3.png" width="1000" height="350">
+	<img src="images/bui3.png" width="1000" height="350"> <br> <br>
 	<p>Visualization of vegetation and building models:</p>
 	<img src="images/bui4.png" width="1000" height="350">
 </body>
